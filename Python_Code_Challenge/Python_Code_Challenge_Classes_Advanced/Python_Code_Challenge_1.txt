@@ -1,0 +1,10 @@
+1. Robot Inheritance
+
+The generic variables and methods have been placed into a Robot class for you. You will need to create two new classes. One for DriveBot and one for WalkBot. Both of these should inherit from the Robot class. The constructor for the DriveBot will be essentially the same as the superclass constructor, but the WalkBot constructor will include an extra parameter for an instance variable called step_length. Here is what we need to do:
+
+Create a new class called DriveBot which inherits from the Robot class
+Call the superclass constructor within the DriveBot constructor but pass motor_speed as the parameter for speed in the super class
+Create a new class called WalkBot which inherits from the Robot class
+Add another parameter to the WalkBot constructor for step_length which defaults to 5
+Call the superclass constructor within the constructor for the WalkBot class
+Assign the input parameter for step_length to a new instance variable for step_length

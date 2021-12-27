@@ -1,0 +1,8 @@
+2. Using The Superclass
+
+There was an issue discovered when testing the WalkBot prototypes. In some cases, the robots were incorrectly detecting their own legs as obstacles. To overcome this, we need to modify our adjust_sensor method to reset obstacle_found to False and step_length to 5 while also using the original logic from the superclass. Here are the steps:
+
+Override the adjust_sensor method in the WalkBot class by re-defining it in that class.
+Call the superclass version of the method within adjust_sensor
+Add a line of code to set obstacle_found to False
+Add a line of code to set step_length to 5

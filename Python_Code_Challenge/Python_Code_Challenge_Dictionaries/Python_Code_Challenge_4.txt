@@ -1,0 +1,9 @@
+4. Values That Are Keys
+
+We are making a program that will create a family tree. Using a dictionary, we want to return a list of all the children who are also parents of other children. Using dictionaries we can consider those people to be values which are also keys in our dictionary of family data. Here is what we need to do:
+
+Define the function to accept one parameter for our dictionary
+Create an empty list to hold the values we find
+Loop through every value in the dictionary
+Inside the loop, test if the current value is a key in the dictionary. If it is then append it to the list of values we found
+After the loop, return the list of values which are also keys

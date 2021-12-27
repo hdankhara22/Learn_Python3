@@ -1,0 +1,10 @@
+4. Overriding Dunder Methods
+
+Let’s add an easy way to increase and decrease our speed as well as some other attributes depending on the type of robot. For the Robot class, we want to increase and decrease the speed using the + and - operators. For the DriveBot class, we want to adjust the speed and sensor_range with those operators. Lastly, for the WalkBot class, we want to adjust the speed and step_length with those operators. We can override the dunder methods which represent those operations and call the superclass version of those dunder methods. Here are the steps:
+
+In the Robot class, override the + operator to add to the speed of the robot
+In the Robot class, override the - operator to subtract from the speed of the robot
+In the DriveBot class, override the + operator to call the superclass version of the operator as well as add to the sensor_range of the robot
+In the DriveBot class, override the - operator to call the superclass version of the operator as well as subtract from the sensor_range of the robot
+In the WalkBot class, override the + operator to call the superclass version of the operator as well as add half of the value on the right side of the operator to the step_length of the robot
+In the WalkBot class, override the - operator to call the superclass version of the operator as well as subtract half of the value on the right side of the operator from the step_length of the robot

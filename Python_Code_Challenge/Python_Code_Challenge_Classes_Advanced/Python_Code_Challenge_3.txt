@@ -1,0 +1,11 @@
+3. Conditional Superclass Logic
+
+Since the bipedal robot is a bit less stable, the obstacle avoidance must be more delicate. Because of this, we want to call the superclass method for avoiding obstacles within the bipedal robot class if the steps per minute are less than or equal to 60, otherwise the WalkBot should only rotate 90 degrees clockwise and set obstacle_found to False. In either case, we need to half the robot’s speed and step_length in order to slow it down during the turn. Here are the steps we need to do:
+
+Within the WalkBot class, override the method called avoid_obstacles by re-defining it in the class.
+If an obstacle was found
+If the speed if less than or equal to 60
+Call the superclass version of the method
+Otherwise add 90 to the WalkBot‘s direction. If the new direction is greater than 360, it should loop back around to be between 0 and 360. For example, if the new direction is 370, it should really be 10. (hint: use modulo to do this!)
+You should also set obstacle_found to False is the speed was over 60.
+Regardless of whether an obstacle was found, half the speed and the step_length of the robot

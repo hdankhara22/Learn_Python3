@@ -1,0 +1,8 @@
+5. Prevent A Robot Takeover
+
+Finally, we are going to make some last additions to our bipedal robot and test it out. Your customers are worried that your new robot model might become sentient when controlled in large numbers. To prevent this, program the bipedal robots so that if five WalkBots are created when there are already at least 5 DriveBots (causing 10 or more total bots) then disable all robots. This is what you need to do:
+
+Create a new class variable in the WalkBot class to count the number of WalkBot instances
+In the constructor for the WalkBot, increment the counter by 1
+Also, in the constructor, check if the number of total Robots (from the superclass) is greater than or equal to 10 and if the number of WalkBots is greater than or equal to 5.
+If so, disable all robots
